@@ -12,13 +12,13 @@ class Footer extends Component {
                 <a href="#pablo">Home</a>
               </li>
               <li>
-                <a href="#pablo">Company</a>
+                <a href="#pablo">Contato</a>
               </li>
               <li>
-                <a href="#pablo">Portfolio</a>
+                <a href="#pablo">Privacidade</a>
               </li>
               <li>
-                <a href="#pablo">Blog</a>
+                <a href="#pablo">Termos</a>
               </li>
             </ul>
           </nav>
