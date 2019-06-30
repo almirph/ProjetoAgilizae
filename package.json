@@ -16,6 +16,7 @@
     "react-router-dom": "5.0.0",
     "react-scripts": "3.0.0",
     "react-toggle": "4.0.2",
+    "semantic-ui-carousel-react": "^1.0.4",
     "semantic-ui-react": "^0.87.2"
   },
   "devDependencies": {
