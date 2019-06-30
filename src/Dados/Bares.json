@@ -9,6 +9,11 @@
             "lon": -43.350054
         },
         "imagem": "https://media-cdn.tripadvisor.com/media/photo-s/07/84/1d/64/sao-bartolomeu.jpg",
+        "CarroselImages": [
+            "https://media-cdn.tripadvisor.com/media/photo-s/07/84/1d/64/sao-bartolomeu.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-f/07/84/1d/5d/sao-bartolomeu.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-f/07/84/1f/a4/arte-no-sao-bartolomeu.jpg"
+        ],
         "feedbacks": [
             {
                 "nome": "Fernanda",
