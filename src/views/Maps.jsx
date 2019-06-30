@@ -28,7 +28,7 @@ const CustomMap = withScriptjs(
 function Maps({ ...prop }) {
   return (
     <CustomMap
-      googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8V24tsj66ZZh_y4tF_pbAGTK5q261o7M"
+      googleMapURL="https://maps.googleapis.com/maps/api/js?key=KEY_HERE"
       loadingElement={<div style={{ height: `100%` }} />}
       containerElement={<div style={{ height: `100vh` }} />}
       mapElement={<div style={{ height: `100%` }} />}
