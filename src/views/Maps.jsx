@@ -7,17 +7,20 @@ import {
   Marker
 } from "react-google-maps";
 
+const RenderMarkers = function(){
+
+}
 const CustomMap = withScriptjs(
   withGoogleMap(props => (
     <GoogleMap
-      defaultZoom={13}
-      defaultCenter={{ lat: 40.748817, lng: -73.985428 }}
+      defaultZoom={15}
+      defaultCenter={{ lat: -21.776091, lng: -43.345889 }}
       defaultOptions={{
         scrollwheel: false,
         zoomControl: true
       }}
     >
-      <Marker position={{ lat: 40.748817, lng: -73.985428 }} />
+      <Marker position={{ lat: 40.748817, lng: -44.8782336 }} />
     </GoogleMap>
   ))
 );
@@ -25,7 +28,7 @@ const CustomMap = withScriptjs(
 function Maps({ ...prop }) {
   return (
     <CustomMap
-      googleMapURL="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY_HERE"
+      googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8V24tsj66ZZh_y4tF_pbAGTK5q261o7M"
       loadingElement={<div style={{ height: `100%` }} />}
       containerElement={<div style={{ height: `100vh` }} />}
       mapElement={<div style={{ height: `100%` }} />}
