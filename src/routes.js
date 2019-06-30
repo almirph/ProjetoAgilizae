@@ -5,10 +5,10 @@ import Typography from "views/Typography.jsx";
 import Icons from "views/Icons.jsx";
 import Maps from "views/Maps.jsx";
 import Notifications from "views/Notifications.jsx";
-import Bares from 'views/Bares.jsx'
+import Bares from "views/Bares.jsx";
+import BarProfile from "views/BarProfile.jsx";
 
 const dashboardRoutes = [
-
   {
     path: "/bares",
     name: "Bares",
@@ -52,12 +52,20 @@ const dashboardRoutes = [
     component: Maps,
     layout: "/admin"
   },
+
   {
     path: "/notifications",
     name: "Notifications",
     icon: "pe-7s-bell",
     component: Notifications,
     layout: "/admin"
+  },
+
+  {
+    path: "/profile",
+    component: BarProfile,
+    layout: "/user",
+    stayInMenu: false
   }
 ];
 
