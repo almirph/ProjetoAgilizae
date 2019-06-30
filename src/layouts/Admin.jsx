@@ -45,7 +45,7 @@ class Admin extends Component {
   };
   getRoutes = routes => {
     return routes.map((prop, key) => {
-      if (prop.layout === "/admin") {
+     // if (prop.layout === "/") {
         return (
           <Route
             path={prop.layout + prop.path}
@@ -58,9 +58,9 @@ class Admin extends Component {
             key={key}
           />
         );
-      } else {
+     // } else {
         return null;
-      }
+     // }
     });
   };
   getBrandText = path => {
