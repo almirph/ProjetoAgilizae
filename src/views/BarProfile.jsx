@@ -1,73 +1,55 @@
-import React, { Component } from "react";
-import { Icon } from "semantic-ui-react";
-import Card from "../components/Card/Card.jsx";
-import { Grid, Image } from "semantic-ui-react";
-import BaresDados from "../Dados/Bares.json";
-import Carousel from "semantic-ui-carousel-react";
-import DadosBares from "../Dados/Bares.json"
-import "./cssglobal.css";
+import React, { Component } from 'react';
+import { Icon } from 'semantic-ui-react';
+import Card from '../components/Card/Card.jsx';
+import { Grid, Image } from 'semantic-ui-react';
+import Carousel from 'semantic-ui-carousel-react';
+import DadosBares from '../Dados/Bares.json';
+import Coments from '../components/Coments/Coments.jsx';
+import CardDescription from '../components/CardDescription/CardDescription.jsx';
+import CuponModal from '../components/CuponModal/CuponModal';
+import './cssglobal.css';
+import Cardapio from 'components/Cardapio/Cardapio.jsx';
 
 const elements = DadosBares[0].CarroselImages.map(imagemCarrosel => {
-  return ({
+  return {
     render: () => <Image src={imagemCarrosel} />
-  });
+  };
 });
+
+const sobre = 'Sobre o Bar';
+const localizacao = 'Localização';
 
 class BarProfile extends Component {
   render() {
     return (
-      <div style={{ padding: "50px" }}>
+      <div style={{ padding: '50px' }}>
         <div>
           <h2>São Bartolomeu</h2>
-          <i className="pe-7s-star" style={{ fontSize: "40px" }} />
-          <i className="pe-7s-star" style={{ fontSize: "40px" }} />
-          <i className="pe-7s-star" style={{ fontSize: "40px" }} />
+          <i className='pe-7s-star' style={{ fontSize: '40px' }} />
+          <i className='pe-7s-star' style={{ fontSize: '40px' }} />
+          <i className='pe-7s-star' style={{ fontSize: '40px' }} />
         </div>
-
-        <Carousel className="ui.card"
+        <Carousel
+          className='ui.card'
           elements={elements}
           duration={3000}
-          animation="slide left"
+          animation='slide left'
           showNextPrev={false}
           showIndicators={true}
         />
-
-        {/* <Grid style={{ paddingTop: "50px" }}>
-          <Grid.Column computer="6">
-          <Image
-          centered
-              bordered
-              rounded
-              src="https://media-cdn.tripadvisor.com/media/photo-s/07/84/1d/64/sao-bartolomeu.jpg"
-              size="large"
-            />
+        <Grid className='cardDescription'>
+          <Grid.Column computer={8} mobile={16}>
+            <CardDescription title={sobre} />
           </Grid.Column>
-          <Grid.Column computer="5">
-            <Image
-              centered
-              bordered
-              rounded
-              src="https://media-cdn.tripadvisor.com/media/photo-f/07/84/1d/5d/sao-bartolomeu.jpg"
-              size="large"
-            />
+          <Grid.Column computer={8} mobile={16}>
+            <CardDescription title={localizacao} />
           </Grid.Column>
-          <Grid.Column computer="5">
-            <Image
-              centered
-              bordered
-              rounded
-              src="https://media-cdn.tripadvisor.com/media/photo-f/07/84/1f/a4/arte-no-sao-bartolomeu.jpg"
-              size="medium"
-            />
-            <Image
-              centered
-              bordered
-              rounded
-              src="https://media-cdn.tripadvisor.com/media/photo-f/07/84/1f/a4/arte-no-sao-bartolomeu.jpg"
-              size="medium"
-            />
-          </Grid.Column>
-        </Grid> */}
+        </Grid>
+        <h4>Cardápio</h4>
+        <Cardapio />
+        <CuponModal />
+        <h4>Comentários</h4>
+        <Coments />
       </div>
     );
   }
