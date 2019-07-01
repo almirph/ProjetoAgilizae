@@ -9,6 +9,8 @@ import CardDescription from '../components/CardDescription/CardDescription.jsx';
 import CuponModal from '../components/CuponModal/CuponModal';
 import './cssglobal.css';
 import Cardapio from 'components/Cardapio/Cardapio.jsx';
+import CarouselProfile from 'components/CarouselProfile/CarouselProfile.jsx';
+import { style } from 'variables/Variables.jsx';
 
 const elements = DadosBares[0].CarroselImages.map(imagemCarrosel => {
   return {
@@ -29,14 +31,13 @@ class BarProfile extends Component {
           <i className='pe-7s-star' style={{ fontSize: '40px' }} />
           <i className='pe-7s-star' style={{ fontSize: '40px' }} />
         </div>
-        <Carousel
-          className='ui.card'
-          elements={elements}
-          duration={3000}
-          animation='slide left'
-          showNextPrev={false}
-          showIndicators={true}
-        />
+        <Grid style={{ paddingTop: '10px' }}>
+          <Grid.Column computer={3} mobile={0} />
+          <Grid.Column computer={10} mobile={16}>
+            <CarouselProfile />
+          </Grid.Column>
+          <Grid.Column computer={3} mobile={0} />
+        </Grid>
         <Grid className='cardDescription'>
           <Grid.Column computer={8} mobile={16}>
             <CardDescription title={sobre} />
