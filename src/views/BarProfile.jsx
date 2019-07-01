@@ -23,6 +23,8 @@ const localizacao = 'Localização';
 
 class BarProfile extends Component {
   render() {
+    //const valores = this.props.valores;
+    console.log(this.props);
     return (
       <div style={{ padding: '50px' }}>
         <div>

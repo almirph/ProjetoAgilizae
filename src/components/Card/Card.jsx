@@ -1,40 +1,50 @@
-import React, { Component } from "react";
-import { Grid, Image } from "semantic-ui-react";
+import React, { Component } from 'react';
+import { Grid, Image } from 'semantic-ui-react';
+import { Link } from 'react-router-dom';
 
 export class Card extends Component {
   render() {
+    const valores = this.props;
+    console.log(this.props);
     return (
       <Grid>
-        <Grid.Column computer={3} mobile={16} verticalAlign="top">
+        <Grid.Column computer={3} mobile={16} verticalAlign='top'>
           <Image
             centered
             bordered
             rounded
             src={this.props.imagem}
-            size="medium"
+            size='medium'
           />
         </Grid.Column>
-        <Grid.Column computer={13} mobile={16} verticalAlign="top">
-          <div className={"card" + (this.props.plain ? " card-plain" : "")}>
+        <Grid.Column computer={13} mobile={16} verticalAlign='top'>
+          <div className={'card' + (this.props.plain ? ' card-plain' : '')}>
             <div
-              className={"header" + (this.props.hCenter ? " text-center" : "")}
+              className={'header' + (this.props.hCenter ? ' text-center' : '')}
             >
-              <h4 className="title">{this.props.title}</h4>
-              <p className="category">{this.props.category}</p>
+              <Link
+                to={`/user/profile/${this.props.id}`}
+                valores={valores}
+                params={valores}
+              >
+                <h4 className='title'>{this.props.title}</h4>
+              </Link>
+
+              <p className='category'>{this.props.category}</p>
             </div>
             <div
               className={
-                "content" +
-                (this.props.ctAllIcons ? " all-icons" : "") +
-                (this.props.ctTableFullWidth ? " table-full-width" : "") +
-                (this.props.ctTableResponsive ? " table-responsive" : "") +
-                (this.props.ctTableUpgrade ? " table-upgrade" : "")
+                'content' +
+                (this.props.ctAllIcons ? ' all-icons' : '') +
+                (this.props.ctTableFullWidth ? ' table-full-width' : '') +
+                (this.props.ctTableResponsive ? ' table-responsive' : '') +
+                (this.props.ctTableUpgrade ? ' table-upgrade' : '')
               }
             >
-              <div className="footer">
+              <div className='footer'>
                 {this.props.legend}
-                {this.props.stats != null ? <hr /> : ""}
-                <div className="stats">
+                {this.props.stats != null ? <hr /> : ''}
+                <div className='stats'>
                   <i className={this.props.statsIcon} /> {this.props.stats}
                 </div>
               </div>

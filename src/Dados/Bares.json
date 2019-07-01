@@ -1,37 +1,37 @@
 [
-    {
-        "key": "1",
-        "nome": "Bar São Bartolomeu",
-        "descricao": "Um bar de um porquinho amarelo",
-        "endereco": {
-            "completo": "R. São Mateus, 41 - loja 4 - São Mateus, Juiz de Fora - MG, 36025-010",
-            "lat": -21.769610,
-            "lon": -43.350054
-        },
-        "imagem": "https://media-cdn.tripadvisor.com/media/photo-s/07/84/1d/64/sao-bartolomeu.jpg",
-        "CarroselImages": [
-            "https://media-cdn.tripadvisor.com/media/photo-s/07/84/1d/64/sao-bartolomeu.jpg",
-            "https://media-cdn.tripadvisor.com/media/photo-f/07/84/1d/5d/sao-bartolomeu.jpg",
-            "https://media-cdn.tripadvisor.com/media/photo-f/07/84/1f/a4/arte-no-sao-bartolomeu.jpg"
-        ],
-        "feedbacks": [
-            {
-                "nome": "Fernanda",
-                "nota": 4.5,
-                "feedback": "Atendentes muito booomm ameeeei <333"
-            },
-            {
-                "nome": "José",
-                "nota": 3,
-                "feedback": "Lugar muito bacana, porém preços n~çao legais"
-            }
-        ],
-        "cupons": [
-            {
-                "id": "SKOL20",
-                "descricao": "20% na compra de litrão de skol",
-                "condicoes": "Somente de terça-feira à quinta-feira até as 22h"
-            }
-        ]
-    }
+  {
+    "id": "1",
+    "nome": "Bar São Bartolomeu",
+    "descricao": "Um bar de um porquinho amarelo",
+    "endereco": {
+      "completo": "R. São Mateus, 41 - loja 4 - São Mateus, Juiz de Fora - MG, 36025-010",
+      "lat": -21.76961,
+      "lon": -43.350054
+    },
+    "imagem": "https://media-cdn.tripadvisor.com/media/photo-s/07/84/1d/64/sao-bartolomeu.jpg",
+    "CarroselImages": [
+      "https://media-cdn.tripadvisor.com/media/photo-s/07/84/1d/64/sao-bartolomeu.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-f/07/84/1d/5d/sao-bartolomeu.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-f/07/84/1f/a4/arte-no-sao-bartolomeu.jpg"
+    ],
+    "feedbacks": [
+      {
+        "nome": "Fernanda",
+        "nota": 4.5,
+        "feedback": "Atendentes muito booomm ameeeei <333"
+      },
+      {
+        "nome": "José",
+        "nota": 3,
+        "feedback": "Lugar muito bacana, porém preços n~çao legais"
+      }
+    ],
+    "cupons": [
+      {
+        "id": "SKOL20",
+        "descricao": "20% na compra de litrão de skol",
+        "condicoes": "Somente de terça-feira à quinta-feira até as 22h"
+      }
+    ]
+  }
 ]
