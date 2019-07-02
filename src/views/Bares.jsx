@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Card from '../components/Card/Card.jsx';
-import BaresDados from '../Dados/Bares.json';
 import axios from 'axios';
 
 export default class Bares extends Component {

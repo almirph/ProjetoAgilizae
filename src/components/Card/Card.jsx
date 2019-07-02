@@ -8,43 +8,47 @@ export class Card extends Component {
     return (
       <Grid>
         <Grid.Column computer={3} mobile={16} verticalAlign='top'>
-          <Image
-            centered
-            bordered
-            rounded
-            src={this.props.imagem}
-            size='medium'
-          />
+          <Link to={`/user/profile/${this.props.id}`}>
+            <Image
+              centered
+              bordered
+              rounded
+              src={this.props.imagem}
+              size='medium'
+            />
+          </Link>
         </Grid.Column>
         <Grid.Column computer={13} mobile={16} verticalAlign='top'>
-          <div className={'card' + (this.props.plain ? ' card-plain' : '')}>
-            <div
-              className={'header' + (this.props.hCenter ? ' text-center' : '')}
-            >
-              <Link to={`/user/profile/${this.props.id}`}>
+          <Link to={`/user/profile/${this.props.id}`}>
+            <div className={'card' + (this.props.plain ? ' card-plain' : '')}>
+              <div
+                className={
+                  'header' + (this.props.hCenter ? ' text-center' : '')
+                }
+              >
                 <h4 className='title'>{this.props.title}</h4>
-              </Link>
 
-              <p className='category'>{this.props.category}</p>
-            </div>
-            <div
-              className={
-                'content' +
-                (this.props.ctAllIcons ? ' all-icons' : '') +
-                (this.props.ctTableFullWidth ? ' table-full-width' : '') +
-                (this.props.ctTableResponsive ? ' table-responsive' : '') +
-                (this.props.ctTableUpgrade ? ' table-upgrade' : '')
-              }
-            >
-              <div className='footer'>
-                {this.props.legend}
-                {this.props.stats != null ? <hr /> : ''}
-                <div className='stats'>
-                  <i className={this.props.statsIcon} /> {this.props.stats}
+                <p className='category'>{this.props.category}</p>
+              </div>
+              <div
+                className={
+                  'content' +
+                  (this.props.ctAllIcons ? ' all-icons' : '') +
+                  (this.props.ctTableFullWidth ? ' table-full-width' : '') +
+                  (this.props.ctTableResponsive ? ' table-responsive' : '') +
+                  (this.props.ctTableUpgrade ? ' table-upgrade' : '')
+                }
+              >
+                <div className='footer'>
+                  {this.props.legend}
+                  {this.props.stats != null ? <hr /> : ''}
+                  <div className='stats'>
+                    <i className={this.props.statsIcon} /> {this.props.stats}
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
+          </Link>
         </Grid.Column>
       </Grid>
       // <Grid celled>

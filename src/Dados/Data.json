@@ -33,6 +33,40 @@
           "condicoes": "Somente de terça-feira à quinta-feira até as 22h"
         }
       ]
+    },
+    {
+      "id": 2,
+      "nome": "Bigode",
+      "descricao": "Barzinho tradicional com mesinhas de madeira e decoração simples oferece petiscos e garrafas de cerveja.",
+      "endereco": "R. Chanceler Oswaldo Aranha, 43 - São Mateus, Juiz de Fora - MG, 36016-340",
+      "imagem": "https://media-cdn.tripadvisor.com/media/photo-s/04/6a/cd/42/bigode.jpg",
+      "CarroselImages": [
+        "https://media-cdn.tripadvisor.com/media/photo-s/04/6a/cd/42/bigode.jpg",
+        "https://media-cdn.tripadvisor.com/media/photo-f/07/84/1d/5d/sao-bartolomeu.jpg",
+        "https://media-cdn.tripadvisor.com/media/photo-f/07/84/1f/a4/arte-no-sao-bartolomeu.jpg"
+      ],
+      "feedbacks": [
+        {
+          "perfilImage": "http://www.onlinesubs.ufpb.br/statics/images/login_avatar.png",
+          "nome": "Fernanda",
+          "nota": 4.5,
+          "feedback": "Atendentes muito booomm ameeeei <333"
+        },
+        {
+          "perfilImage": "https://cdn.pixabay.com/photo/2016/08/20/05/38/avatar-1606916_960_720.png",
+          "nome": "José",
+          "nota": 3,
+          "feedback": "Lugar muito bacana, porém preços não são legais"
+        }
+      ],
+      "cupon": [
+        {
+          "cuponImage": "https://cdn.awsli.com.br/600x450/129/129579/produto/31598361/b334cb1545.jpg",
+          "id": "SKOL20",
+          "descricao": "20% na compra de litrão de skol",
+          "condicoes": "Somente de terça-feira à quinta-feira até as 22h"
+        }
+      ]
     }
   ]
 }
