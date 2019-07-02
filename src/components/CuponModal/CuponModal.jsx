@@ -3,6 +3,8 @@ import { Button, Header, Image, Modal } from 'semantic-ui-react';
 
 export default class CuponModal extends Component {
   render() {
+    const cuponList = this.props.cuponList ? this.props.cuponList : [];
+    console.log('cupon', cuponList);
     return (
       <div style={{ paddingTop: '30px' }}>
         <Modal
@@ -13,18 +15,16 @@ export default class CuponModal extends Component {
           }
         >
           <Modal.Header>Selecione um cupon</Modal.Header>
-          <Modal.Content image>
-            <Image
-              wrapped
-              size='medium'
-              src='https://cdn.awsli.com.br/600x450/129/129579/produto/31598361/b334cb1545.jpg'
-            />
-            <Modal.Description>
-              <Header>Cupon Litrão Skol</Header>
-              <p>20% na compra de litrão de skol</p>
-              <p>Somente de terça-feira à quinta-feira até as 22h</p>
-            </Modal.Description>
-          </Modal.Content>
+          {cuponList.map(cupon => (
+            <Modal.Content image>
+              <Image wrapped size='medium' src={cupon.cuponImage} />
+              <Modal.Description>
+                <Header>{cupon.id}</Header>
+                <p>{cupon.descricao}</p>
+                <p>{cupon.condicoes}</p>
+              </Modal.Description>
+            </Modal.Content>
+          ))}
         </Modal>
       </div>
     );

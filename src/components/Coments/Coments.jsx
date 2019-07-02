@@ -1,33 +1,32 @@
-import React from "react";
-import { Comment, Header } from "semantic-ui-react";
+import React, { Component } from 'react';
+import { Comment, Header, Icon } from 'semantic-ui-react';
 
-const Coments = () => (
-  <div>
-    <Comment.Group size="massive">
-      <Comment>
-        <Comment.Avatar
-          as="a"
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThzNX6B2WbQS6m--WE7b-Evuu6Ks6FZu9_Yr8LuDmm9LizP_z_"
-        />
-        <Comment.Content>
-          <Comment.Author as="a">Matt</Comment.Author>
-          <Comment.Text>Muito bom</Comment.Text>
-        </Comment.Content>
-      </Comment>
-      <Comment>
-        <Comment.Avatar
-          as="a"
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThzNX6B2WbQS6m--WE7b-Evuu6Ks6FZu9_Yr8LuDmm9LizP_z_"
-        />
-        <Comment.Content>
-          <Comment.Author as="a">Joe</Comment.Author>
-          <Comment.Text>
-            gostei muito do lugar, com certeza voltarei
-          </Comment.Text>
-        </Comment.Content>
-      </Comment>
-    </Comment.Group>
-  </div>
-);
+class Coments extends Component {
+  render() {
+    const comentList = this.props.comentList ? this.props.comentList : [];
+    return (
+      <div>
+        <Comment.Group size='massive'>
+          {comentList.map(coment => (
+            <Comment>
+              <Comment.Avatar as='a' src={coment.perfilImage} />
+
+              <Comment.Content>
+                <Comment.Author as='a'>{coment.nome}</Comment.Author>
+                <Comment.Metadata>
+                  <div>
+                    <Icon name='star' />
+                    {coment.nota} Estrelas
+                  </div>
+                </Comment.Metadata>
+                <Comment.Text>{coment.feedback}</Comment.Text>
+              </Comment.Content>
+            </Comment>
+          ))}
+        </Comment.Group>
+      </div>
+    );
+  }
+}
 
 export default Coments;

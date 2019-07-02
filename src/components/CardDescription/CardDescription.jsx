@@ -3,6 +3,7 @@ import { Card, Icon } from 'semantic-ui-react';
 
 export default class CardDescription extends Component {
   render() {
+    console.log(this.props.description);
     return (
       <div>
         <Card>

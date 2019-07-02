@@ -4,20 +4,16 @@ import { Carousel } from 'react-responsive-carousel';
 
 export default class CarouselProfile extends Component {
   render() {
+    console.log('imagem', this.props.images);
+    const images = this.props.images ? this.props.images : [];
     return (
-      <div>
-        <Carousel width='100%'>
+      <Carousel width='100%'>
+        {images.map(image => (
           <div>
-            <img src='https://media-cdn.tripadvisor.com/media/photo-s/07/84/1d/64/sao-bartolomeu.jpg' />
+            <img src={image} />
           </div>
-          <div>
-            <img src='https://media-cdn.tripadvisor.com/media/photo-f/07/84/1d/5d/sao-bartolomeu.jpg' />
-          </div>
-          <div>
-            <img src='https://media-cdn.tripadvisor.com/media/photo-f/07/84/1f/a4/arte-no-sao-bartolomeu.jpg' />
-          </div>
-        </Carousel>
-      </div>
+        ))}
+      </Carousel>
     );
   }
 }

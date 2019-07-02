@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom';
 export class Card extends Component {
   render() {
     const valores = this.props;
-    console.log(this.props);
     return (
       <Grid>
         <Grid.Column computer={3} mobile={16} verticalAlign='top'>
@@ -22,11 +21,7 @@ export class Card extends Component {
             <div
               className={'header' + (this.props.hCenter ? ' text-center' : '')}
             >
-              <Link
-                to={`/user/profile/${this.props.id}`}
-                valores={valores}
-                params={valores}
-              >
+              <Link to={`/user/profile/${this.props.id}`}>
                 <h4 className='title'>{this.props.title}</h4>
               </Link>
 
