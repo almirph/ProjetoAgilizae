@@ -7,4 +7,15 @@
   .cardDescription {
     padding: 50px;
   }
+
+  .formBar {
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+    padding-right: 150px !important;
+    padding-left: 150px !important;
+  }
+}
+
+.formBar {
+  padding: 20px;
 }

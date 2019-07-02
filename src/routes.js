@@ -1,7 +1,5 @@
-import Dashboard from 'views/Dashboard.jsx';
+import CadastroBar from './views/CadastroBar.jsx';
 import UserProfile from 'views/UserProfile.jsx';
-import TableList from 'views/TableList.jsx';
-import Typography from 'views/Typography.jsx';
 import Icons from 'views/Icons.jsx';
 import Maps from 'views/Maps.jsx';
 import Notifications from 'views/Notifications.jsx';
@@ -25,18 +23,11 @@ const dashboardRoutes = [
     layout: '/admin'
   },
   {
-    path: '/table',
-    name: 'Table List',
+    path: '/cadastro-bar',
+    name: 'Cadastrar Bar',
     icon: 'pe-7s-note2',
-    component: TableList,
-    layout: '/admin'
-  },
-  {
-    path: '/typography',
-    name: 'Typography',
-    icon: 'pe-7s-news-paper',
-    component: Typography,
-    layout: '/admin'
+    component: CadastroBar,
+    layout: '/user'
   },
   {
     path: '/icons',

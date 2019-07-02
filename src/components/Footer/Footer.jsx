@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Grid } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 class Footer extends Component {
   render() {
@@ -24,8 +25,8 @@ class Footer extends Component {
           </nav>
           <p className='copyright pull-right'>
             &copy; {new Date().getFullYear()}{' '}
-            <a href='http://localhost:3001/user/bares'>Agilizaê</a>, feito com
-            amor para boas notas
+            <Link to='http://localhost:3001/user/bares'>Agilizaê</Link>, feito
+            com amor para boas notas
           </p>
         </Grid>
       </footer>
