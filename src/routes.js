@@ -22,6 +22,7 @@ const dashboardRoutes = [
     component: UserProfile,
     layout: '/admin'
   },
+
   {
     path: '/cadastro-bar',
     name: 'Cadastrar Bar',
@@ -29,6 +30,7 @@ const dashboardRoutes = [
     component: CadastroBar,
     layout: '/user'
   },
+
   {
     path: '/icons',
     name: 'Icons',
@@ -56,6 +58,13 @@ const dashboardRoutes = [
     path: '/profile/:id',
     component: BarProfile,
     layout: '/user',
+    stayInMenu: false
+  },
+
+  {
+    path: '/',
+    component: Bares,
+    layout: '',
     stayInMenu: false
   }
 ];
