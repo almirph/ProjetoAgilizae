@@ -1,6 +1,6 @@
 Protótipo feito para projeto da UFJF DCC049-2019.1-A - Empreendimentos em Informática
 
-protótipo do backend feito com Json-Server. Dados no diretório ProjetoAgilizae\src\Dados
+Protótipo do backend feito com Json-Server. Dados no diretório ProjetoAgilizae\src\Dados
 
 Rodar o comando json-server --watch Data.json para iniciar o backend no diretório de Dados.
 
