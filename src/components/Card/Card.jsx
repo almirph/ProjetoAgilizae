@@ -27,7 +27,10 @@ export class Card extends Component {
                 }
               >
                 <h4 className='title'>{this.props.title}</h4>
-
+                <i className='pe-7s-star' style={{ fontSize: '20px' }} />
+                <i className='pe-7s-star' style={{ fontSize: '20px' }} />
+                <i className='pe-7s-star' style={{ fontSize: '20px' }} />
+                <i className='pe-7s-star' style={{ fontSize: '20px' }} />
                 <p className='category'>{this.props.category}</p>
               </div>
               <div
@@ -43,6 +46,9 @@ export class Card extends Component {
                   {this.props.legend}
                   {this.props.stats != null ? <hr /> : ''}
                   <div className='stats'>
+                    <p className='category' style={{ marginBottom: '0' }}>
+                      {this.props.adress}
+                    </p>
                     <i className={this.props.statsIcon} /> {this.props.stats}
                   </div>
                 </div>

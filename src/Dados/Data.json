@@ -3,7 +3,7 @@
     {
       "id": 1,
       "nome": "São Bartolomeu",
-      "descricao": "Um bar de um porquinho amarelo, muito legal principalmente o chopp de maracujá",
+      "descricao": "Cervejas especiais, hambúrgueres gourmets e porções em ambiente descontraído com arte e mesinhas externas.",
       "endereco": "R. São Mateus, 41 - loja 4 - São Mateus, Juiz de Fora - MG, 36025-010",
       "imagem": "https://media-cdn.tripadvisor.com/media/photo-s/07/84/1d/64/sao-bartolomeu.jpg",
       "CarroselImages": [
@@ -11,10 +11,10 @@
         "https://media-cdn.tripadvisor.com/media/photo-f/07/84/1d/5d/sao-bartolomeu.jpg",
         "https://media-cdn.tripadvisor.com/media/photo-f/07/84/1f/a4/arte-no-sao-bartolomeu.jpg"
       ],
-	  "coordenadas": {
-		"lat": -21.768973,
-		"lon": -43.348168
-	  },
+      "coordenadas": {
+        "lat": -21.768973,
+        "lon": -43.348168
+      },
       "feedbacks": [
         {
           "perfilImage": "http://www.onlinesubs.ufpb.br/statics/images/login_avatar.png",
@@ -46,13 +46,12 @@
       "imagem": "https://media-cdn.tripadvisor.com/media/photo-s/04/6a/cd/42/bigode.jpg",
       "CarroselImages": [
         "https://media-cdn.tripadvisor.com/media/photo-s/04/6a/cd/42/bigode.jpg",
-        "https://media-cdn.tripadvisor.com/media/photo-f/07/84/1d/5d/sao-bartolomeu.jpg",
         "https://media-cdn.tripadvisor.com/media/photo-f/07/84/1f/a4/arte-no-sao-bartolomeu.jpg"
       ],
-	  "coordenadas": {
-		"lat": -21.769669, 
-		"lon": -43.350006
-	  },
+      "coordenadas": {
+        "lat": -21.769669,
+        "lon": -43.350006
+      },
       "feedbacks": [
         {
           "perfilImage": "http://www.onlinesubs.ufpb.br/statics/images/login_avatar.png",

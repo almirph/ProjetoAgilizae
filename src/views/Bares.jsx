@@ -29,6 +29,7 @@ export default class Bares extends Component {
             id={bar.id}
             title={bar.nome}
             category={bar.descricao}
+            adress={bar.endereco}
             imagem={bar.imagem}
           />
         ))}

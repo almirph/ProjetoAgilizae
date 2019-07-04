@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Grid, Image } from 'semantic-ui-react';
+import { Grid, Image, Button, Form } from 'semantic-ui-react';
 import Coments from '../components/Coments/Coments.jsx';
 import CardDescription from '../components/CardDescription/CardDescription.jsx';
 import CuponModal from '../components/CuponModal/CuponModal';
@@ -59,6 +59,25 @@ class BarProfile extends Component {
         <CuponModal cuponList={bar.cupon} />
         <h4>Comentários</h4>
         <Coments comentList={bar.feedbacks} />
+        <div className='adicionarComent'>
+          <h5>Adicionar comentário</h5>
+          <Form style={{ padding: '10px' }}>
+            <Form.Group widths='equal'>
+              <Form.Input
+                fluid
+                label='Email'
+                placeholder='exemplo@email.com'
+                size='big'
+              />
+              <Form.Input fluid label='Nome' placeholder='Nome' size='big' />
+            </Form.Group>
+            <Form.TextArea
+              label='Sobre'
+              placeholder='Sua opinião é importante'
+            />
+          </Form>
+          <Button primary>Enviar</Button>
+        </div>
       </div>
     );
   }

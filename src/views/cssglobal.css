@@ -13,9 +13,22 @@
     padding-bottom: 30px !important;
     padding-right: 150px !important;
     padding-left: 150px !important;
+
+    font-size: 20px !important;
   }
 }
 
 .formBar {
   padding: 20px;
+  font-size: 14px !important;
+}
+
+.modal {
+  bottom: auto !important;
+  font-size: 14px !important;
+}
+
+.adicionarComent {
+  padding-top: 20px;
+  font-size: 14px !important;
 }
