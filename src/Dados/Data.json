@@ -11,6 +11,10 @@
         "https://media-cdn.tripadvisor.com/media/photo-f/07/84/1d/5d/sao-bartolomeu.jpg",
         "https://media-cdn.tripadvisor.com/media/photo-f/07/84/1f/a4/arte-no-sao-bartolomeu.jpg"
       ],
+	  "coordenadas": {
+		"lat": -21.768973,
+		"lon": -43.348168
+	  },
       "feedbacks": [
         {
           "perfilImage": "http://www.onlinesubs.ufpb.br/statics/images/login_avatar.png",
@@ -45,6 +49,10 @@
         "https://media-cdn.tripadvisor.com/media/photo-f/07/84/1d/5d/sao-bartolomeu.jpg",
         "https://media-cdn.tripadvisor.com/media/photo-f/07/84/1f/a4/arte-no-sao-bartolomeu.jpg"
       ],
+	  "coordenadas": {
+		"lat": -21.769669, 
+		"lon": -43.350006
+	  },
       "feedbacks": [
         {
           "perfilImage": "http://www.onlinesubs.ufpb.br/statics/images/login_avatar.png",
