@@ -22,6 +22,7 @@ export default class CadastroBar extends Component {
             label='CNPJ'
             placeholder='00.000.000/0000-00'
             size='big'
+            type='number'
           />
         </Form.Group>
         <Form.Group widths='equal'>
@@ -30,14 +31,22 @@ export default class CadastroBar extends Component {
             label='Email'
             placeholder='exemplo@email.com'
             size='big'
+            type='email'
           />
           <Form.Input
             fluid
             label='Telefone'
             placeholder='(32) 0000-0000'
             size='big'
+            type='number'
           />
-          <Form.Input fluid label='CEP' placeholder='00000-000' size='big' />
+          <Form.Input
+            fluid
+            label='CEP'
+            placeholder='00000-000'
+            size='big'
+            type='number'
+          />
         </Form.Group>
         <Form.TextArea
           label='Sobre'
