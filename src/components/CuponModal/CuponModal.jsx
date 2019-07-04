@@ -8,6 +8,7 @@ export default class CuponModal extends Component {
     return (
       <div style={{ paddingTop: '30px' }}>
         <Modal
+          size='fullscreen'
           trigger={
             <Button secondary size='big'>
               Cupons!
